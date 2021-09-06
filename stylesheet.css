@@ -1,0 +1,224 @@
+li {
+  list-style: none;
+}
+
+h1 {
+  padding: 20px;
+  position: fixed;
+  top: 15px;
+  right: 35px;
+  color: #000;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+h2 {
+  padding: 50px 90px;
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 73px;
+}
+
+body {
+  position: relative;
+  background-color: #fff;
+}
+
+* {
+  cursor: none !important;
+}
+
+.cursor {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: none;
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-color: #CCCCCC;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  z-index: 1000;
+}
+
+.cursor.is-active {
+  background-color: transparent;
+  border: solid 1px #CCCCCC;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+img {
+  border: 1px #000 solid;
+}
+
+.menu-trigger,
+.menu-trigger span {
+  display: block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu-trigger {
+  top: 15px;
+  left: 15px;
+  margin: 20px;
+  position: fixed;
+  width: 35px;
+  height: 18px;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  z-index: 91;
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  background-color: #000;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  width: 100%;
+  height: 2px;
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  width: 50%;
+  height: 2px;
+  top: 8px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+}
+
+.menu-trigger.hover span:nth-of-type(2) {
+  width: 100%;
+}
+
+.menu-trigger.clic span:nth-of-type(1) {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  background-color: #fff;
+}
+
+.menu-trigger.clic span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-trigger.clic span:nth-of-type(3) {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  background-color: #fff;
+}
+
+.gnav {
+  position: absolute;
+  top: 110px;
+  left: -260px;
+  z-index: 92;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gnav ul {
+  display: block;
+  text-align: left;
+}
+.gnav li {
+  list-style: none;
+  overflow: hidden;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5em 0;
+}
+
+.gnav.clic {
+  opacity: 1;
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+}
+
+#screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+#screen.clic {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.works {
+  font-family: "Roboto", sans-serif;
+  margin: 300px 0px 0px 90px;
+  display: inline-block;
+  z-index: 93;
+}
+.works .theme {
+  font-size: 18px;
+  padding-bottom: 15px;
+  color: #000;
+}
+.works .sec1 {
+  padding-bottom: 30px;
+}
+.works a {
+  display: block;
+  overflow: hidden;
+  font-size: 16px;
+  color: gray;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  padding: 0.2em 0;
+}
+.works a img {
+  position: absolute;
+  pointer-events: none;
+  top: 130px;
+  left: 550px;
+  opacity: 0;
+}
+.works a:hover {
+  color: black;
+}
+.works a:hover img {
+  opacity: 1;
+}
+/*# sourceMappingURL=stylesheet.css.map */
