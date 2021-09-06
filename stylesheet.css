@@ -1,8 +1,4 @@
---- --- ul {
-  list-style: none;
-}
-
-h1 {
+--- --- h1 {
   padding: 20px;
   position: fixed;
   top: 15px;
@@ -220,5 +216,8 @@ img {
 }
 .works a:hover img {
   opacity: 1;
+}
+.works ul {
+  list-style: none;
 }
 /*# sourceMappingURL=stylesheet.css.map */

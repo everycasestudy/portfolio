@@ -1,10 +1,6 @@
 --- 
 --- 
 
-ul{
-  list-style :none;
-}
-
 h1{
   padding: 20px;
   position: fixed;
@@ -213,5 +209,9 @@ img{
     img{
       opacity: 1;
     }
+  }
+
+  ul{
+    list-style: none;
   }
 }
