@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet"  href="stylesheet.css">
+        <title>test</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+
+
+    </head>
+
+    <body>
+        <div class="cursor"></div> <!--マウスカーソル-->
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+
+        <header>
+            <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+
+            <div id="menu"> <!--メニュー-->
+                <button class="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class id="screen">
+                    <nav class="gnav">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p class="gnav-link">WORKS</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <p class="gnav-link">CONTACT</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <h1>KUTA TSUCHIKAWA</h1>
+
+        </header>
+
+        <h2>CONTACT</h2>
+
+        
+        <input name="name" id="name" type="text" onkeyup='window.contact.checkValidation()'>
+        <input name="email" id="email" type="email" onkeyup='window.contact.checkValidation()'>
+        <input name="subject" id="subject" type="text" onkeyup='window.contact.checkValidation()'>
+        <textarea name="inquiry" id="inquiry"  onkeyup='window.contact.checkValidation()' ></textarea>
+        <input type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">
+
+        
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="index.js"></script>
+        <script>
+            lazyload();
+        </script>
+    </body>
+        
+</html>
