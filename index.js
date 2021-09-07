@@ -65,7 +65,7 @@ window.contact.checkValidation = function(){
 window.contact.send = function(){
     var name = $('input[id="name"]').val() 
     var email = $('input[id="email"]').val() 
-    var subject = $('textarea[id="subject"]').val()
+    var subject = $('input[id="subject"]').val()
     var inquiry = $('textarea[id="inquiry"]').val()
     data = {
         name: name,

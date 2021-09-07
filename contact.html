@@ -38,7 +38,7 @@
                     <nav class="gnav">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="index.html">
                                     <p class="gnav-link">WORKS</p>
                                 </a>
                             </li>
@@ -61,12 +61,17 @@
         <h2>CONTACT</h2>
 
         
-        <input name="name" id="name" type="text" onkeyup='window.contact.checkValidation()'>
-        <input name="email" id="email" type="email" onkeyup='window.contact.checkValidation()'>
-        <input name="subject" id="subject" type="text" onkeyup='window.contact.checkValidation()'>
-        <textarea name="inquiry" id="inquiry"  onkeyup='window.contact.checkValidation()' ></textarea>
-        <input type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">
-
+        <div class="forms">
+            name
+            <input name="name" id="name" type="text" onkeyup='window.contact.checkValidation()'>
+            mail
+            <input name="email" id="email" type="email" onkeyup='window.contact.checkValidation()'>
+            subject
+            <input name="subject" id="subject" type="text" onkeyup='window.contact.checkValidation()'>
+            inquiry
+            <textarea name="inquiry" id="inquiry"  onkeyup='window.contact.checkValidation()' ></textarea>
+            <input type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">
+        </div>
         
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
